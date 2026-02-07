@@ -1,9 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AAA Sports Camp</title>
-  </head>
-  <body>
-    <h1>AAA Sports Camp Website Coming Soon</h1>
-  </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="logo">AAA Sports Camp</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#coaches">Coaches</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home">
+        <h1 class="hero-title">AAA Sports Camp</h1>
+        <p class="hero-subtitle">A fun, safe, and energetic soccer camp for kids of all skill levels.</p>
+        <div style="text-align:center;">
+            <a href="#register" class="btn-primary">Register Now</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <h2>About the Camp</h2>
+        <p>
+            AAA Sports Camp provides a positive and exciting environment where kids learn soccer fundamentals, 
+            teamwork, and confidence. Our mission is to help young athletes grow while having fun and staying active.
+        </p>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>The full camp experience at an affordable rate.</p>
+        <div class="price-box">$150 per child</div>
+    </section>
+
+    <!-- COACHES SECTION -->
+    <section id="coaches">
+        <h2>Our Coaches</h2>
+        <p>
+            Our camp is led by dedicated local high‑school soccer athletes who bring energy, experience, 
+            and a passion for teaching the next generation. They focus on fundamentals, teamwork, and creating 
+            a fun, safe environment for every player.
+        </p>
+    </section>
+
+    <!-- REGISTER SECTION -->
+    <section id="register">
+        <h2>Register for the Camp</h2>
+        <p>Please fill out the form below to register your child.</p>
+
+        <form action="YOUR_MAKE_WEBHOOK_URL" method="POST">
+
+            <input type="text" name="parent_name" placeholder="Parent Name" required>
+            <input type="email" name="parent_email" placeholder="Parent Email" required>
+            <input type="text" name="parent_phone" placeholder="Parent Phone" required>
+
+            <input type="text" name="child_name" placeholder="Child Name" required>
+            <input type="number" name="child_age" placeholder="Child Age" required>
+
+            <input type="text" name="emergency_name" placeholder="Emergency Contact Name" required>
+            <input type="text" name="emergency_phone" placeholder="Emergency Contact Phone" required>
+
+            <textarea name="medical_notes" placeholder="Medical Notes / Allergies"></textarea>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+
+        <div style="text-align:center; margin-top:30px;">
+            <button id="checkout-button">Pay with Stripe</button>
+        </div>
+
+        <!-- Stripe Script Placeholder -->
+        <script>
+            // Replace with your Stripe publishable key + Checkout session logic
+            document.getElementById("checkout-button").addEventListener("click", function () {
+                alert("Stripe Checkout will be added here.");
+            });
+        </script>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@aaasportscamp.com</p>
+        <p>Location: Sammamish, WA</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#coaches">Coaches</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>© 2026 AAA Sports Camp. All rights reserved.</p>
+    </footer>
+
+</body>
 </html>
